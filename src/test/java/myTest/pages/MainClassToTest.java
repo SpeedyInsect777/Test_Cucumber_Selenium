@@ -7,5 +7,5 @@ public class MainClassToTest {
     @Test
     public void setup(){
         System.out.println("Hello ");
-    }//
+    }/////
 }
