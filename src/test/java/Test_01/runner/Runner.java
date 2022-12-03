@@ -8,12 +8,12 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
 
        // plugin ="html:target/cucumber-report2.html" ,
-        features = "src/test/resources/Features/Test_01.feature",
+        features = "src/test/resources/Features",
         glue = "Test_01/stepDefinitions",
         dryRun = false,
         tags = "@wip"
 
 )
-public class CukesRunner {
+public class Runner {
 
 }
