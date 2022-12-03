@@ -10,20 +10,21 @@ public class Hooks {
 
     Etsy_page page = new Etsy_page();
 
-@Before
-    public void setup(){
+    @Before
+    public void setup() {
 
-    Driver.getDriver().get(ConfigurationReader.getProperty("etsy"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("etsy"));
 
 
-}
-@After
-    public void tearDown(){
-    try {
-        Thread.sleep(5000);
-    } catch (InterruptedException e) {
-        throw new RuntimeException(e);
     }
-    Driver.getDriver().close();
-}
+
+    @After
+    public void tearDown() {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        Driver.getDriver().quit();
+    }
 }

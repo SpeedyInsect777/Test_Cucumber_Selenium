@@ -8,11 +8,10 @@ import utilities.Driver;
 
 public class Etsy_page {
 
- //   @FindBy()
+    //   @FindBy()
     public WebElement titleElement;
 
-   public Etsy_page(){
-       PageFactory.initElements(Driver.getDriver(),this);
-   }
-
+    public Etsy_page() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
 }
