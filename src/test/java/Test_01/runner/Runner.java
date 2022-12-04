@@ -7,11 +7,11 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-       // plugin ="html:target/cucumber-report2.html" ,
+        // plugin ="html:target/cucumber-report2.html" ,
         features = "src/test/resources/Features",
         glue = "Test_01/stepDefinitions",
         dryRun = false,
-        tags = "@wip"
+       tags = "@practice2"
 
 )
 public class Runner {
