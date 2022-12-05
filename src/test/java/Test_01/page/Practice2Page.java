@@ -22,4 +22,8 @@ public class Practice2Page {
     @FindBy(xpath = "//input[@type='radio']")
     public List<WebElement> radioButtons;
 
+    @FindBy(xpath = "//a[@target='_blank']")
+    public List<WebElement> clickLinks;
+
+
 }

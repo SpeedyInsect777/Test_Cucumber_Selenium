@@ -32,11 +32,32 @@ checkbox2.get(0).click();
       Wait.wait(1);
 
       page2.radioButtons.stream().forEach(x-> System.out.println(x.getText()));
-
+Driver.getDriver().navigate().back();
     }
     @Then("user must click links and verify if they work properly")
     public void user_must_click_links_and_verify_if_they_work_properly() {
 
+List<WebElement> newTab = page2.menuList.stream().filter(x->x.getText().contains("Multiple Windows")).toList();
+
+Wait.wait(1);
+
+newTab.get(0).click();
+
+String mainWindow = Driver.getDriver().getWindowHandle();
+
+
+
+page2.clickLinks.get(0).click();
+        String secondWindow = Driver.getDriver().getWindowHandle();
+
+Wait.wait(5);
+
+Driver.getDriver().switchTo().window(mainWindow);
+        Wait.wait(5);
+        Driver.getDriver().navigate().back();
+        Wait.wait(4);
+        Driver.getDriver().switchTo().window(secondWindow);
+        Wait.wait(3);
 
 
     }

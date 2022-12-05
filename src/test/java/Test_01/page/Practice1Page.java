@@ -55,4 +55,6 @@ public class Practice1Page {
     @FindBy(xpath = "//a[@class='dropdown-item']")
    public List<WebElement> dropdownItems;
 
+
+
 }
