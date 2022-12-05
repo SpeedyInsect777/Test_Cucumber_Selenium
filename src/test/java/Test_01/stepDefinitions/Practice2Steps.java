@@ -53,11 +53,11 @@ page2.clickLinks.get(0).click();
 Wait.wait(5);
 
 Driver.getDriver().switchTo().window(mainWindow);
-        Wait.wait(5);
+        Wait.wait(2);
         Driver.getDriver().navigate().back();
-        Wait.wait(4);
+        Wait.wait(2);
         Driver.getDriver().switchTo().window(secondWindow);
-        Wait.wait(3);
+        Wait.wait(2);
 
 
     }
