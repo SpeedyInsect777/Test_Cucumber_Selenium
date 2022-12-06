@@ -19,4 +19,7 @@ Given user must click on "Given link"
     And user performs "Given task/s"
 Then user returns back to home page
 
+Scenario Outline:
+
+  Examples:
 
