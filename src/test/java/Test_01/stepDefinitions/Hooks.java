@@ -20,7 +20,7 @@ public class Hooks {
     @Before
     public void setup() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("env"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("env2"));
     }
     @AfterClass
     public void afterClass()
