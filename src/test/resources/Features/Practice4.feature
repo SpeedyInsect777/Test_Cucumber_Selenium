@@ -1,20 +1,24 @@
 
 
-Feature:
-  User enters to the given website and searches to
-  given values and compares if title matches.
+Feature: Wikipedia Search Functionality and verifications
 
+  Background:
 
-@"ScenarioOutlineTest"
-  Scenario Outline:
+    Given User is on Wikipedia home page
 
-    When a User goes to the given website and search for "<names>"
-    Then user should be able to see exact same name as a title
+  Scenario Outline: Wikipedia Search Functionality Title Verification with using DDT
+
+    When User types "<searchValue>" in the wiki search box
+
+    Then User sees "<expectedTitle>" is in the wiki title
 
     Examples:
+      | searchValue       | expectedTitle     |
+      | Steve Jobs        | Steve Jobs        |
+      | Bill Gates        | Bill Gates        |
+      | Cristiano Ronaldo | Cristiano Ronaldo |
+      | Elon Musk         | Elon Musk         |
+      | Albert Einstein   | Albert Einstein   |
+      | Chuck Norris      | Chuck Norris      |
+      | Alisher Usmanov   | Alisher Usmanov   |
 
-      | names      |
-      | Manuchekhr |
-      | Asoev      |
-      | Yusuf      |
-      | Asoev      |

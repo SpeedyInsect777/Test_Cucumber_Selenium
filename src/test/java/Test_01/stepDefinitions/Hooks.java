@@ -11,22 +11,13 @@ import utilities.Wait;
 public class Hooks {
 
 
-    @BeforeClass
-    public void beforeClass()
-    {
-        System.out.println("@BeforeClass running...");
-    }
-
     @Before
     public void setup() {
 
-        Driver.getDriver().get(ConfigurationReader.getProperty("env2"));
+
+        Driver.closeDriver();
     }
-    @AfterClass
-    public void afterClass()
-    {
-        System.out.println("@AfterClass running...");
-    }
+
     @After
     public void tearDown() {
 
