@@ -15,7 +15,6 @@ public class Practice5Steps {
     public void user_goes_to_google_page() {
         Driver.getDriver().get("https://www.google.com/");
 
-
     }
 
     @Given("user must search {string}")

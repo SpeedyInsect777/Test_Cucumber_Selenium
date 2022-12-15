@@ -1,5 +1,4 @@
 
-@wip
 Feature: user goes to the given web and searches for people
   and compares if title matches with searching result
 

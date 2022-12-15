@@ -12,10 +12,10 @@ public class Hooks {
 
 
     @Before
-    public void setup() {
+    public void setUp() {
+Driver.getDriver().get(ConfigurationReader.getProperty("env"));
 
 
-        Driver.closeDriver();
     }
 
     @After
