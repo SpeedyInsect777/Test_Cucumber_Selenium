@@ -5,6 +5,7 @@ import Test_02.page.TC02_DataTable_ScenarioOutline_Page;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 import utilities.ConfigurationReader;
 import utilities.Driver;
@@ -13,6 +14,7 @@ import utilities.Wait;
 public class TC02_DataTable_ScenarioOutline_Step {
     TC02_BasePage basePage = new TC02_BasePage();
     TC02_DataTable_ScenarioOutline_Page page = new TC02_DataTable_ScenarioOutline_Page();
+    String expectedResult ="Mike Tyson";
 
     @Given("user is already logged in to the page")
     public void user_is_already_logged_in_to_the_page() {
@@ -78,15 +80,15 @@ public class TC02_DataTable_ScenarioOutline_Step {
     @When("user enters ExpDate {string}")
     public void user_enters_ExpDate(String expDate) {
         page.inputCardExp.sendKeys(expDate);
-        Wait.wait(1);
+
         page.buttonProcessOrder.click();
-        Wait.wait(4);
+
     }
 
-//    @Then("user should see new order in the table on view all order page")
-//    public void user_should_see_new_order_in_the_table_on_view_all_order_page() {
-//        basePage.buttonViewAllOrders.click();
-//        System.out.println(page.expectedResult.getText());
-//
-//    }
+    @Then("user should see new order in the table on view all order page")
+    public void user_should_see_new_order_in_the_table_on_view_all_order_page() {
+        basePage.buttonViewAllOrders.click();
+       Assert.assertEquals( page.expectedResult.getText(),expectedResult);
+
+    }
 }

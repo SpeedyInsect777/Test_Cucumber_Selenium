@@ -1,6 +1,6 @@
 Feature: As a user I should
   be able to put given credentials
-@wip
+#@wip
   Scenario Outline:
     Given user inputs "<FirstName>","<LastName>","<Text>"
 

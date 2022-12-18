@@ -16,7 +16,7 @@ Feature: As a user I should be able to login in to the given page
 #      | CardNumber   | 123456789012 |
 #      | ExpDate      | 77/88        |
 #    Then user should see new order in the table on view all order page
-#  @wip
+  @wip
   Scenario Outline:
     Given user is already logged in to the page
     When user is on order page
@@ -29,7 +29,7 @@ Feature: As a user I should be able to login in to the given page
     * user enters Zipcode "<Zipcode>"
     * user enters CardNumber "<CardNumber>"
     * user enters ExpDate "<ExpDate>"
-   # * user should see new order in the table on view all order page
+    * user should see new order in the table on view all order page
     Examples:
       | Product    | Quantity | CustomerName    | Street          | City        | State | Zipcode | CardNumber   | ExpDate |
       | Familybea  | 25       | Mike Tyson      | 7 eddy road     | Marion      | Ohio  | 43302   | 123456789012 | 77/88   |
