@@ -12,7 +12,7 @@ public class Driver {
     private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
 
     public static WebDriver getDriver() {
-        if (driverPool.get() == null) {  // if driver/browser was never opened
+        if (driverPool.get() == null) {
             String browserType = ConfigurationReader.getProperty("browser");
 
             switch (browserType) {
