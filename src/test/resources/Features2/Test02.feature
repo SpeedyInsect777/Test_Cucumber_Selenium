@@ -2,21 +2,24 @@ Feature: As a user I should be able to login in to the given page
   enter provided data than after processing order
   I should be able to see new order on the view all orders page
 
-  Scenario:
-   Given user is already logged in to the page
-    When user is on order page
-    Then user enters appropriate test data
-      | Product      | Familybea    |
-      | Quantity     | 25           |
-      | CustomerName | Mike Tyson   |
-      | Street       | 7 eddy road  |
-      | City         | Marion       |
-      | State        | Ohio         |
-      | Zipcode      | 43302        |
-      | CardNumber   | 123456789012 |
-      | ExpDate      | 77/88        |
-    Then user should see new order in the table on view all order page
+#  Scenario:
+#   Given user is already logged in to the page
+#    When user is on order page
+#    Then user enters appropriate test data
+#      | Product      | Familybea    |
+#      | Quantity     | 25           |
+#      | CustomerName | Mike Tyson   |
+#      | Street       | 7 eddy road  |
+#      | City         | Marion       |
+#      | State        | Ohio         |
+#      | Zipcode      | 43302        |
+#      | CardNumber   | 123456789012 |
+#      | ExpDate      | 77/88        |
+#    Then user should see new order in the table on view all order page
+
+
   @wip
+
   Scenario Outline:
     Given user is already logged in to the page
     When user is on order page
@@ -30,6 +33,7 @@ Feature: As a user I should be able to login in to the given page
     * user enters CardNumber "<CardNumber>"
     * user enters ExpDate "<ExpDate>"
     * user should see new order in the table on view all order page
+
     Examples:
       | Product    | Quantity | CustomerName    | Street          | City        | State | Zipcode | CardNumber   | ExpDate |
       | Familybea  | 25       | Mike Tyson      | 7 eddy road     | Marion      | Ohio  | 43302   | 123456789012 | 77/88   |
