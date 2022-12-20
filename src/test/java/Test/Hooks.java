@@ -1,4 +1,4 @@
-package Test_02.StepDefinitions;
+package Test;
 
 import io.cucumber.java.After;
 

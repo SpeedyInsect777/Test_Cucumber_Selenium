@@ -1,19 +1,15 @@
-package Test_02.StepDefinitions;
+package Test;
 
-import Test_02.page.TC02_BasePage;
-import Test_02.page.TC02_DataTable_ScenarioOutline_Page;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.support.ui.Select;
 import utilities.ConfigurationReader;
 import utilities.Driver;
-import utilities.Wait;
 
-public class TC02_DataTable_ScenarioOutline_Step {
-    TC02_BasePage basePage = new TC02_BasePage();
-    TC02_DataTable_ScenarioOutline_Page page = new TC02_DataTable_ScenarioOutline_Page();
+public class DataTable_ScenarioOutline_Step {
+    BasePage basePage = new BasePage();
+    DataTable_ScenarioOutline_Page page = new DataTable_ScenarioOutline_Page();
     String expectedResult ="Mike Tyson";
 
     @Given("user is already logged in to the page")

@@ -1,4 +1,4 @@
-package Test_02.runner;
+package Test;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
 
          },
         features = "src/test/resources/Features2",
-        glue = "Test_02/StepDefinitions",
+        glue = "Test",
         dryRun = false,
         tags = "@wip",
         publish=true 

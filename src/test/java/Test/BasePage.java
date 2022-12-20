@@ -1,11 +1,11 @@
-package Test_02.page;
+package Test;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class TC02_BasePage {
+public class BasePage {
 
     @FindBy(xpath = "//input[@type='text']")
     public WebElement inputUsername;
@@ -25,7 +25,7 @@ public class TC02_BasePage {
     @FindBy(xpath = "/html/body/div/nav/div[2]/a[3]/button")
     public WebElement buttonOrder;
 
-    public TC02_BasePage() {
+    public BasePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 }

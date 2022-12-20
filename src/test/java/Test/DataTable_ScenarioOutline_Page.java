@@ -1,4 +1,4 @@
-package Test_02.page;
+package Test;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
 
-    public class TC02_DataTable_ScenarioOutline_Page  {
+    public class DataTable_ScenarioOutline_Page  {
             @FindBy(xpath = "//select")
             public WebElement selectProduct;
 
@@ -49,7 +49,7 @@ import utilities.Driver;
             @FindBy(xpath = "//div[@class='table-container']/table/tbody/tr/td")
             public WebElement expectedResult;
 
-            public TC02_DataTable_ScenarioOutline_Page() {
+            public DataTable_ScenarioOutline_Page() {
                 PageFactory.initElements(Driver.getDriver(), this);
             }
         }
