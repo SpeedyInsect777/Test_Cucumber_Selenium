@@ -10,7 +10,7 @@ import utilities.Driver;
 public class DataTable_ScenarioOutline_Step {
     BasePage basePage = new BasePage();
     DataTable_ScenarioOutline_Page page = new DataTable_ScenarioOutline_Page();
-    String expectedResult ="Mike Tyson";
+
 
     @Given("user is already logged in to the page")
     public void user_is_already_logged_in_to_the_page() {
