@@ -2,22 +2,6 @@ Feature: As a user I should be able to login in to the given page
   enter provided data than after processing order
   I should be able to see new order on the view all orders page
 
-#  Scenario:
-#   Given user is already logged in to the page
-#    When user is on order page
-#    Then user enters appropriate test data
-#      | Product      | Familybea    |
-#      | Quantity     | 25           |
-#      | CustomerName | Mike Tyson   |
-#      | Street       | 7 eddy road  |
-#      | City         | Marion       |
-#      | State        | Ohio         |
-#      | Zipcode      | 43302        |
-#      | CardNumber   | 123456789012 |
-#      | ExpDate      | 77/88        |
-#    Then user should see new order in the table on view all order page
-
-
   @wip
 
   Scenario Outline:

@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
                  "pretty"
 
          },
-        features = "src/test/resources/Features2",
+        features = "src/test/resources/Features",
         glue = "Test",
         dryRun = false,
         tags = "@wip",
